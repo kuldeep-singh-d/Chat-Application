@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
-import ChatBar from '../../components/ChatBar';
-import ContacuUserList from '../../components/ContactUserList';
-import UsersList from '../../components/ShowUserCom'
+import ChatBar from '../../components/ChatScreenComponent/ChatBar';
+import ContacuUserList from '../../components/ChatScreenComponent/ContactUserList';
+
 
 
 export default function ContectScreen (props) {

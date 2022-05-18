@@ -16,7 +16,7 @@ export default function ChatMessages  () {
                 <View style={{ justifyContent: 'flex-start', }} >
                     <View style={styles.Sendre}>
                         <Image
-                            source={require('../assets/images/profile2.jpg')}
+                            source={require('../../assets/images/profile2.jpg')}
                             style={{ width: 34, height: 34, marginRight: 7 }}
                         />
                         <View style={{ backgroundColor: '#C7C8C8', paddingHorizontal: 23, paddingVertical: 7, borderRadius: 18 }}>
@@ -30,7 +30,7 @@ export default function ChatMessages  () {
                         <Text style={{ color: '#000' }}>{"How may i help you ?"}</Text>
                     </View>
                     <Image
-                        source={require('../assets/images/profile2.jpg')}
+                        source={require('../../assets/images/profile2.jpg')}
                         style={{ width: 34, height: 34, marginLeft: 7 }}
                     />
                 </View>

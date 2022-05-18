@@ -1,5 +1,5 @@
 import React from "react";
-import DrawerCom from "../components/DrawerCom";
+import DrawerCom from "../components/Drawer/DrawerComponent";
 import AddUserScreen from "../screens/AddUser/index";
 
 export default function (Stack) {

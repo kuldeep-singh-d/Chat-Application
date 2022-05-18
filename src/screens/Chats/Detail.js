@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { NetworkInfo } from 'react-native-network-info';
-import ChatBar from '../../components/ChatBar';
+import ChatBar from '../../components/ChatScreenComponent/ChatBar';
 
 export default function DetailScreen (props) {
 

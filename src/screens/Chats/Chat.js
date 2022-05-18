@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Button } from 'react-native';
-import ChatMessages from '../../components/ChatMsg';
+import ChatMessages from '../../components/ChatScreenComponent/ChatMessage';
 
-import ChatBar from '../../components/ChatBar';
+import ChatBar from '../../components/ChatScreenComponent/ChatBar';
 
 
 export default function Chatscreen(props) {

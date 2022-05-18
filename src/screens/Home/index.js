@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, } from "react-native";
-import SearchBar from '../../components/SearchBar';
-import UsersList from '../../components/ShowUserCom'
+import SearchBar from '../../components/ChatScreenComponent/SearchBar';
+import UsersList from '../../components/ChatScreenComponent/ShowUserComponent'
 
 export default function HomeScreen(props) {
     return (

@@ -1,14 +1,14 @@
 import React from 'react';
 import { createDrawerNavigator} from '@react-navigation/drawer';
-import HomeScreen from '../screens/Home/index';
-import ProfileScreen from '../screens/Profile/index';
-import AddUserScreen from '../screens/AddUser/index';
-import CustomDrawer from '../components/CustomDrawerCom';
-import AddUserComponent from './AddUserCom';
+import HomeScreen from '../../screens/Home/index';
+import ProfileScreen from '../../screens/Profile/index';
+import AddUserScreen from '../../screens/AddUser/index';
+import CustomDrawer from './CustomDrawerComponent';
+import AddUserComponent from '../AddUserComponent/AddUserComponent';
 
 const Drawer = createDrawerNavigator();
 
-export default function DrawerCom (props) {
+export default function DrawerComponent (props) {
     return (
 
         <Drawer.Navigator drawerContent={props => <CustomDrawer {...props} />}>

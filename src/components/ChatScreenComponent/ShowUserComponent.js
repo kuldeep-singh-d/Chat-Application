@@ -1,8 +1,8 @@
 import { Text, View, TouchableOpacity, Image, FlatList, StyleSheet } from 'react-native'
 import React, { useState, useEffect } from 'react';
-import Users from '../redux/Data';
+import Users from '../../redux/Data';
 
-export default function ShowUserCom(props) {
+export default function ShowUserComponent(props) {
 
   const { navigation } = props;
   const [count, setCount] = useState("4")
@@ -25,7 +25,7 @@ export default function ShowUserCom(props) {
             <View style={{ width: 330 }}>
               <View style={{height: "auto", flexDirection: 'row', alignItems: 'center', backgroundColor: '#fff', marginBottom: 5, marginTop: 5, paddingHorizontal: 10, paddingVertical: 10}}>
                 <View style={{borderWidth: .5, borderRadius: 25, width: 35, height: 35, marginLeft: 5, marginRight: 7, alignItems: 'center', justifyContent: 'center', paddingVertical: 16}}>
-                  <Image source={require('../assets/images/profile2.jpg')}
+                  <Image source={require('../../assets/images/profile2.jpg')}
                     style={{ width: 30, height: 30, borderRadius: 10, borderRadius: 25 }} />
                 </View>
                 <View>

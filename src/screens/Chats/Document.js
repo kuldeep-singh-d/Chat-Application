@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
-import ChatBar from '../../components/ChatBar';
-import DocumentComp from '../../components/DocumentCom';
+import ChatBar from '../../components/ChatScreenComponent/ChatBar';
+import DocumentComp from '../../components/DocumentComponent/DocumentComponent';
 
 export default function DocumentScreen(props) {
 

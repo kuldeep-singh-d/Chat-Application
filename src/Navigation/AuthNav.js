@@ -1,6 +1,6 @@
 import React from "react";
 import LoginScreen from "../screens/Login/index";
-import DrawerCom from "../components/DrawerCom";
+import DrawerCom from "../components/Drawer/DrawerComponent";
 import AddUserScreen from "../screens/AddUser/index";
 import Chatscreen from  "../screens/Chats/Chat";
 import Detailscreen from "../screens/Chats/Detail";

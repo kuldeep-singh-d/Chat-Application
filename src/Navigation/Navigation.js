@@ -34,35 +34,3 @@ export default function Navigation() {
     </NavigationContainer>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import LoginScreen from '../screens/LoginScreen';
-// import AddUserScreen from '../screens/AddUserScreen';
-// import DrawerCom from '../components/DrawerCom';
-
-// <NavigationContainer>
-//   <Stack.Navigator initialRouteName='Login' screenOptions={{ headerShown: false }}>
-//     <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }}/>
-//     <Stack.Screen name="Drawer" component={DrawerCom}/>
-//     <Stack.Screen name="AddUser" component={AddUserScreen}/>
-//   </Stack.Navigator>
-// </NavigationContainer>
-

@@ -9,7 +9,7 @@ export default function CustomDrawer  (props) {
         <View style={{ flex: 1, }}>
             <View style={{ flex: 0, alignItems: 'center' }}>
                 <View style={{ alignItems: 'center', marginTop: 70, borderWidth: 0.5, width: 80, borderRadius: 50, marginBottom: 10 }}>
-                    <Image source={require('../assets/images/profile2.jpg')}
+                    <Image source={require('../../assets/images/profile2.jpg')}
                         style={{ width: 78, height: 80, borderRadius: 50, }} />
                 </View>
                 <Text style={{ fontWeight: 'bold', fontSize: 23, color: '#000' }}>{unserName}</Text>
