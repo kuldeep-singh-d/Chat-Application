@@ -8,34 +8,42 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Sender from './Components/sender';
 import Receiver from './Components/receiver';
 
 export default function Conversations(props) {
+  const [showTheThing, setShowTheThing] = useState(false);
+  // setState({showTheThing: true})  // true to show it    // false to hide it
+  const [message, setMessage] = useState();
+  const [value, setValue] = useState();
+
+  
   function send() {
-    Alert.alert('Message sent');
+    // Alert.alert('Message sent');
+    setMessage(value);  
+    setShowTheThing(true);
   }
+
   return (
     <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
       <View style={styles.container}>
         <ScrollView>
-          {/* <Sender message='Hello Giriraj Digital.' />
-        <Receiver message='How may i help you ?'/>
-        <Sender message='Hello Giriraj Digital.' />
-        <Receiver message='How may i help you ?'/>
-        <Sender message='Hello Giriraj Digital.' /> */}
-
           <Sender message="Hello, I'm Darius. what can i help you with?" />
           <Receiver message="I have two cases, I will need to increase my internet package and I would like to ask for a new offer, as my contract is about to expire." />
           <Sender message="Of course, which Internet package are you interested in??" />
-          <Receiver message="I want to increase the package to at least 40GB." />
+          {/* <Receiver message={msg} /> */}
+          { showTheThing &&
+              <Receiver message={message} />
+          }
           <Sender message="Darius Typing..." />
         </ScrollView>
 
         <View style={styles.inputview}>
           <TextInput
             style={styles.input}
+            onChangeText={text => setValue(text)}
+            // onChangeText={(message) => setMessage({ message })}
             //onChangeText={onChangeNumber}
             //value={}
             placeholder={'Message..'}
