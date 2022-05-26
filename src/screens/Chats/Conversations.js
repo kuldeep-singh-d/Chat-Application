@@ -8,55 +8,42 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Sender from './Components/sender';
 import Receiver from './Components/receiver';
 
 export default function Conversations(props) {
   const [showTheThing, setShowTheThing] = useState(false);
-  // setState({showTheThing: true})  // true to show it    // false to hide it
   const [message, setMessage] = useState();
   const [value, setValue] = useState();
 
-  
   function send() {
     // Alert.alert('Message sent');
-    setMessage(value);  
+    setMessage(value);
     setShowTheThing(true);
   }
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
       <View style={styles.container}>
         <ScrollView>
           <Sender message="Hello, I'm Darius. what can i help you with?" />
-          <Receiver message="I have two cases, I will need to increase my internet package and I would like to ask for a new offer, as my contract is about to expire." />
-          <Sender message="Of course, which Internet package are you interested in??" />
-          {/* <Receiver message={msg} /> */}
-          { showTheThing &&
+          <Receiver />
+          {/* { showTheThing &&
               <Receiver message={message} />
-          }
-          <Sender message="Darius Typing..." />
+          } */}
         </ScrollView>
 
         <View style={styles.inputview}>
           <TextInput
             style={styles.input}
             onChangeText={text => setValue(text)}
-            // onChangeText={(message) => setMessage({ message })}
-            //onChangeText={onChangeNumber}
-            //value={}
             placeholder={'Message..'}
           />
           <TouchableOpacity style={{marginRight: 34}} onPress={send}>
             <View style={styles.Send}>
               <Text
-                style={{
-                  // color: 'rgba(63,95,115,1)',
-                  color:'#f06f2d',
-                  fontWeight: 'bold',
-                  fontSize: 20,
-                }}>
+                style={{color: '#f06f2d', fontWeight: 'bold', fontSize: 20}}>
                 Send
               </Text>
             </View>
@@ -86,7 +73,7 @@ const styles = StyleSheet.create({
     borderRadius: 34,
     marginHorizontal: 10,
     marginVertical: 18,
-    borderColor:'#5e5e5e'
+    borderColor: '#5e5e5e',
   },
   input: {
     width: 290,
