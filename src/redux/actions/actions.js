@@ -29,8 +29,6 @@ export const Login = (email, password) => {
   }
 }
 
-
-
 export const Logout = () => {
   return async dispatch => {
     await AsyncStorage.clear();
